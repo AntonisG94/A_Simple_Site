@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="login.css" rel="stylesheet" type="text/css">
+  <title>Photography Conference 2021</title>
+</head>
+<body>
+  <nav>
+    <ul class="navlinks">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href=info.html>Info</a>
+      </li>
+      <li>
+        <a href="travel.html">Map</a>
+      </li>
+      <li>
+        <a href="team.html">Speakers</a>
+      </li>
+      <li>
+        <a href="programm.php">Schedule</a>
+      </li>
+      <li>
+        <a href="signup.html">SignUp</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
+      <li>
+        <a href="logout.php">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <form class="box" action="login.php" method="post">
+    <h1>Login</h1>
+    <input type="text" name="loginusersname" placeholder="Username" minlength="6" maxlength="8" pattern="[A-Za-z]+" required>
+    <input type="password" name="loginpass" placeholder="Password" minlength="6" maxlength="8" pattern="[A-Za-z]+" required>
+    <input type="submit" name="submit" value="Login" >
+    <div style="color: white;">Don't have an account yet?</div>
+    <a style="color:#fcd34f;" href="signup.html">Create an account</a>
+  </form>
+</body>
+
+</html>

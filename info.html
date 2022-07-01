@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="info.css" rel="stylesheet" type="text/css">
+  <title>Photography Conference 2021</title>
+</head>
+<body>
+  <nav>
+    <ul class="navlinks">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href=info.html>Info</a>
+      </li>
+      <li>
+        <a href="travel.html">Map</a>
+      </li>
+      <li>
+        <a href="team.html">Speakers</a>
+      </li>
+      <li>
+        <a href="programm.php">Schedule</a>
+      </li>
+      <li>
+        <a href="signup.html">SignUp</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
+      <li>
+        <a href="logout.php">Logout</a>
+      </li>
+    </ul>
+  </nav><br><br>
+    <div class="hero-text">
+      <h2>&bull;Information About Our conference&bull;</h2><br>
+      <p>We are the freshest, most authentic and real conference you will attend.<br> Our goal is to educate, inspire and excite our attendees with a focus on education and community.<br> Our vision for this conference is to have a small setting
+        workshop
+        vibe but with some of the biggest speakers, you have ever seen.<br> We reflect on the photography communities' diversity in gender, ethnicity, age and artistic expression.<br> If you want a place to come and learn from some of the most
+        talented
+        photographers in the industry, this is it.</p>
+      <input type="button" name="mybtn" id="mybtn" value="Press to Read More..." onclick="myfunction()" /><br><br><br>
+    </div><br><br><br><br><br><br><br>
+      <div id="hiddentext">
+        <h2 style="text-align: center;">&bull;&nbsp;Our Objectives&nbsp;&bull;</h2><br>
+        &bull; To advance photography in all of its branches, both as an art and as a profession.<br>
+        &bull; To create, foster, promote, and maintain cordial relations, cooperation, and interchange of thought and opinion freely among its members.<br>
+        &bull; To oppose violations and infringements of the rights of professional photographers or their organizations.<br>
+        &bull; To foster the practical benefits to be derived from professional acquaintanceship and the discussion of subjects having to do with photography.<br>
+        &bull; To fix and maintain ethical standards among its members.<br><br>
+      </div>
+  <script>
+    function myfunction() {
+      var x = document.getElementById('hiddentext');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <link href="signup.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <title>Photography Conference 2021</title>
+</head>
+<body>
+  <nav>
+    <ul class="navlinks">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href=info.html>Info</a>
+      </li>
+      <li>
+        <a href="travel.html">Map</a>
+      </li>
+      <li>
+        <a href="team.html">Speakers</a>
+      </li>
+      <li>
+        <a href="programm.php">Schedule</a>
+      </li>
+      <li>
+        <a href="signup.html">SignUp</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
+      <li>
+        <a href="logout.php">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="container">
+  <h1>&bull; Sign Up &bull;</h1>
+  <div class="underline">
+  </div>
+  <form action="signup.php" method="post">
+    <div class="address">
+      <input type="radio" id="Mr"   name="gender" value="Mr" required> Mr &nbsp; &nbsp; &nbsp;
+      <input type="radio" id="Mrs" name="gender" value="Mrs" required> Mrs
+    </div>
+    <br>
+    <div class="name1">
+      <label for="name"></label>
+      <input type="text" placeholder="My firstname is" name="firstname" id="name_input" pattern="[A-Za-zΑ-Ωα-ω]+" required>
+    </div>
+    <div class="name2">
+      <label for="name"></label>
+      <input type="text" placeholder="My lastname is" name="lastname" id="name_input" pattern="[A-Za-zΑ-Ωα-ω]+" required>
+    </div>
+    <div class="email">
+      <label for="email"></label>
+      <input type="email" placeholder="My e-mail is" name="useremail" id="email_input" required>
+    </div>
+    <div class="telephone">
+      <label for="name"></label>
+      <input type="text" placeholder="My number is" name="phone" id="telephone_input" maxlength="10" pattern="[0-9]+" required>
+    </div>
+    <div class="username">
+      <label for="name"></label>
+      <input type="text" placeholder="Username" name="usersname" id="username" minlength="6" maxlength="8" pattern="[A-Za-z]+" required>
+    </div>
+    <div class="password">
+      <label for="name"></label>
+      <input type="password" placeholder="Password" name="pass" minlength="6" maxlength="8" pattern="[A-Za-z]+" required>
+    </div>
+    <div class="confirmpassword">
+      <label for="name"></label>
+      <input type="password" placeholder="Confirm Password" name="confirmpass" minlength="6" maxlength="8" pattern="[A-Za-z]+" required>
+    </div>
+    <div>
+      <input type="checkbox" name="agree"/> I agree with terms and conditions. <br><br>
+    </div>
+    <div class="buttons">
+      <input type="submit" name="submit" id="form_button1" value="Submit"/>
+      <input type="reset" name="reset" id="form_button2" value="Reset"/>
+    </div>
+  </form><!-- // End form -->
+</div><!-- // End #container -->
+</body>
+</html>

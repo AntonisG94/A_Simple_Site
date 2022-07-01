@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+session_destroy();
+session_unset();
+unset($_SESSION["loggedin"]);
+$_SESSION = array();
+?>
+<script>
+alert("Invalid username or password");
+location.replace("login.html");
+</script>
+</body>
+</html>

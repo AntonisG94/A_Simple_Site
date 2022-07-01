@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/NkFAmf.jpg);
+  font-family: "Poppins";
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Poppins;
+  overflow: auto;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.navlinks ul {
+  flex-wrap: wrap;
+}
+
+.navlinks li {
+  list-style: none;
+}
+
+.navlinks a {
+  display: block;
+  color: #be6a15;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 7px 3px;
+}
+
+li a:hover{
+	color: #ac3f21;
+}
+
+.box {
+  width: 350px;
+  padding: 40px;
+  position: relative;
+  top: 30%;
+  left: 13%;
+  border-radius: 10px;
+  transform: translate(-50%,-50%);
+  background-color: transparent;
+  text-align: center;
+}
+.box h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f3cf7a;
+}
+.box input[type="text"], .box input[type="password"] {
+  font-weight: bold;
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  color: #f3cf7a;
+}
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+  width: 280px;
+  border-color: #fcd34f;
+}
+.box input[type="submit"]{
+  font-size: 14px;
+  font-weight: bold;
+  border: ;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid;
+  padding: 14px 40px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  color: #f3cf7a;
+}
+.box input[type="submit"]:hover{
+  background: #fcd34f;
+  border: 2px #fcd34f;
+  color: black;
+}
+
+::placeholder{
+  font-size: 14px;
+  color: #f3cf7a;
+  opacity: 1;
+}
